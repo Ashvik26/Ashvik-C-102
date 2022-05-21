@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            object identification app
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    </head>
+<body>
+    <div class="container"> <center>
+        <h1 class="btn btn-default heading"> Image Recognition</h1>
+        <h2> Model is trained to find the following objects:</h2>
+        <b class="names of objects"> 
+face<hr>
+medal<hr>
+bell<hr>
+hat<hr>
+funko pop<hr>
+video game controller<hr>
+        </b>
+        <label>Webcam View-</label>
+        <div id="camera"></div>
+        <div id="screenshot"></div>
+        <button class="btn btn-primary" onclick="capture()"> capture image </button>
+        <button class="btn btn-success" onclick="identify()">identify image</button>
+        <p>object:<span id="object_name"></span></p>
+        <p>accuracy:<span id="percentage"></span></p>
+    </center></div>
+
+</body>
+</html>
